@@ -1,0 +1,22 @@
+{
+  "name": "dom-exercise-zohra-b",
+  "version": "1.0.0",
+  "description": "ejercicios para aprender el DOM en js y realizar tests",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.3",
+    "@testing-library/jest-dom": "^6.1.4",
+    "jsdom": "^22.1.0",
+    "vite": "^5.0.0",
+    "vitest": "^0.34.6"
+  }
+}

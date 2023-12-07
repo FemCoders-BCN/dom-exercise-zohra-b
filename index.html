@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,64 +20,55 @@
     <title>Práctica del DOM</title>
   </head>
   <body>
-    <div class="product-card">
+    <main class="product-card">
       <div class="product-image">
         <!-- <img src="./public/img/graycar.jpg" alt="cars" /> -->
       </div>
-      <div class="product-description">
-        <h3 class="tag">CARRO</h3>
-        <h1 class="product-title">Mercedez Benz c300 2022</h1>
-        <p class="product-details">
-          <span class="mileage">
-            <span style="font-size: 1em; color: black"
-              ><i class="fa-solid fa-car"></i
-            ></span>
-           Kilometraje: 4,000 millas
-          </span>
-          <span class="fuel">
-            <span style="font-size: 1em; color: black"
-              ><i class="fa-solid fa-gas-pump"></i
-            ></span>
-            Combustible: 25mpg
-          </span>
-          <span class="safety">
-            <span style="font-size: 1em; color: black"
-              ><i class="fa-solid fa-shield"></i></span
-            >Seguridad:
-            <span class="stars">
+      <article class="product-description">
+        <h1 class="tag" id="etiqCarro">CARRO</h1>
+          <h2 class="product-title">Mercedez Benz c300 2022</h2>
+            <section class="product-details">
+              <h3 class="mileage" style="font-size: 1em; color: black">
+                <i class="fa-solid fa-car"></i>
+              Kilometraje: 4,000 millas
+              </h3>
+              <h3 class="fuel" style="font-size: 1em; color: black">
+                <i class="fa-solid fa-gas-pump"></i>
+              Combustible: 25mpg
+              </h3>
+            <h3 class="safety" style="font-size: 1em; color: black">
+              <i class="fa-solid fa-shield"></i>
+              Seguridad:
+              <span class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
-            </span>
-          </span>
-        </p>
+              </span>
+            </h3>
+          </section>
         <p>Escoge un color:</p>
-        <div class="colors-price">
-          <div class="colors">
-            <span class="red"></span>
-            <span class="gray"></span>
-            <span class="black"></span>
-          </div>
-          <div class="pricing">
+        <section class="colors-price">
+          <section class="colors">
+            <button class="red" id="rojo"></button>
+            <button class="gray" id="gris"></button>
+            <button class="black" id="negro"></button>
+          </section>
+          <section class="pricing">
             <h2 class="new-price">$134,450</h2>
             <h4 class="old-price"><s>$140,500</s></h4>
-          </div>
-        </div>
-        <button id="button">
-          <span style="font-size: 1em; color: white">
+          </section>
+        </section>
+        <button id="button" style="font-size: 1em; color: white" class="button-text">
             <i class="fa-solid fa-cart-shopping"></i>
-          </span>
-          <span class="button-text">Agregar al carrito</span>
+          Agregar al carrito
         </button>
-        <button class="feedback">
-          <span id="white-button"
-            >? Guao, vas a ser el dueño de un Benz ?</span
-          >
+        <button class="feedback" id="white-button">
+          ? Guao, vas a ser el dueño de un Benz ?         >
         </button>
-      </div>
-    </div>
+      </article>
+    </main>
     <script src="./src/js/app.js"></script>
   </body>
 </html>
