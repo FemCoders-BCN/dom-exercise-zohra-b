@@ -10,12 +10,14 @@ describe('APP',()=>{
           runScripts: "dangerously",
         });
       });
-      it("should render css", async () => {
+
+      it("should render font-awesome", async () => {
         let document = dom.window.document;
         let link = document.querySelector('link[rel="stylesheet"]');
-        
-        expect(link.href).toMatch(/\src\/css\/style\.css$/)
+        expect(link.href).toMatch("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css")
       });
+
+     
 
       it("should contain a red button to select red color", ()=>{
         expect(document.getElementById("rojo")).toBeDefined();
